@@ -5,20 +5,16 @@ using System.Web;
 
 namespace MatricuFastWeb.Models
 {
-    public class Usuario
+    public class Matricula
     {
-        public int UsuarioId { get; set; }
-        public string Nombre { get; set; }
-        public string Apellidos { get; set;}
-        public string Constraseña { get; set; }
-        public string Email { get; set; }
+        public int MatriculaId { get; set; }
+        public int EstudianteId { get; set; }
+        public int CursoId { get; set; }
+        public DateTime FechaMatricula { get; set; }
         public string AdicionadoPor { get; set; }
         public DateTime FechaAdicion { get; set; }
         public string ModificadoPor { get; set; }
         public DateTime FechaModificacion { get; set; }
-
-  
-
 
     }
 }
